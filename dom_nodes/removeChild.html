@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3>this example uses (removeChild) method</h3>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">this is a 1st example</p>
+        <p id="p2">this is a 2nd example</p>
+    </div>
+
+    <button onclick="removeFunction()">remove element</button>
+
+    <script>
+        function removeFunction() {
+            var parent = document.getElementById('div1');
+            var elemt = document.getElementById('p1');
+            parent.removeChild(elemt);
+
+            // elemt.parentNode.removeChild(elemt);
+        }
+    </script>
+</body>
+</html>
