@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">this is a paragrap</p>
+        <p id="p2">this is a another paragrap</p>
+    </div>
+    <script>
+        var para = document.createElement('p');
+        var node = document.createTextNode('this is new');
+        para.appendChild(node);
+        var element = document.getElementById('div1');
+        element.appendChild(para);
+    </script>
+</body>
+</html>

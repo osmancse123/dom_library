@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">this is a paragrap</p>
+        <p id="p2">this is a another paragrap</p>
+    </div>
+
+    <script>
+        var para = document.createElement('p');
+        var node = document.createTextNode('new paragrap');
+        para.appendChild(node);
+
+        var element = document.getElementById('div1');
+        var child = document.getElementById('p2');
+        element.insertBefore(para,child);
+    </script>
+</body>
+</html>

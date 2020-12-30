@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="demo">dom tutorial</title>
+</head>
+<body>
+    <p id="try">everything is prosible, if you realy want</p>
+    <script>
+        var myTitle = document.getElementById('try').childNodes[0].nodeValue = 'this is dom code';
+    </script>
+
+    <h2 id="attr">this is 1st example</h2>
+    <p id="intro"></p>
+    <script>
+        document.getElementById('intro').innerHTML = document.getElementById('attr').innerHTML;
+    </script>
+
+    <h2 id="c1">this is 2nd example</h2>
+    <p id="ca0"></p>
+    <script>
+        document.getElementById('ca0').innerHTML = document.getElementById('c1').firstChild.nodeValue;
+    </script>
+
+    <h3 id="pt1">(3d example) retrieves the text of an h1 element and copies it into a p element:</h3>
+    <p id="pt0"></p>
+    <script>
+        document.getElementById('pt0').innerHTML = document.getElementById('pt1').childNodes[0].nodeValue;
+    </script>
+</body>
+</html>
