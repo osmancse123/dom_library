@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>js dom collection</h2>
+
+    <p>hello coder</p>
+    <p>hello bangladesh</p>
+    <p id="pra">click the button to change the color of all p elements</p>
+
+    <button onclick="myFunction()">click</button>
+
+    <script>
+        function myFunction() {
+            var myCollection = document.getElementsByTagName('p');  //can use querySelectorAll('p')
+            for (let i = 0; i < myCollection.length; i++) {
+                myCollection[i].style.color = 'tomato';
+                
+            }
+        }
+    </script>
+
+    <!-- <script>
+        var myCollection = document.getElementsByTagName('p');
+        document.getElementById('pra').innerHTML = 'the document contains ' + myCollection.length + ' paragrap' 
+    </script> -->
+</body>
+</html>

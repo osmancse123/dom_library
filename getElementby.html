@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>dom Element</title>
+</head>
+<body>
+    <div id="main">
+        <header>js is most popular</header>
+        <p>DOM element very useful.</p>
+        <p>This example demonstrates the <b>getElementsByTagName</b> method..</p>
+    </div>
+    <p id="attr"></p>
+
+    <script>
+        var x = document.getElementById('main');
+        var y = x.getElementsByTagName('p');
+        document.getElementById('attr').innerHTML = "array of (0) " + y[0].innerHTML;
+    </script>
+</body>     
+</html>

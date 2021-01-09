@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p>HTML Elements by Tag Name</p>
+    <title>getElementsByTagName </title>
+</head>
+<body>
+    <p>array number 1 of p tags</>
+    <h4 id="sine">this is html tag</h4>
+
+    <script>
+        var tagName = document.getElementsByTagName('p');
+        document.getElementById('sine').innerHTML = "(index 0): find " + tagName[0].innerHTML;
+
+    </script>
+</body>
+</html>

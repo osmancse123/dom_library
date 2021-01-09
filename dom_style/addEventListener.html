@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <h3>addEventListener() method</h3>
+</head>
+<body>
+    <p>This example uses the addEventListener() method to attach a click event to a button</p>
+    <button id="Btn">try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById('Btn').addEventListener("click", myFunction);
+
+        function myFunction()  {
+            document.getElementById('demo').innerHTML = Date();
+        }
+    </script>
+</body>
+</html>

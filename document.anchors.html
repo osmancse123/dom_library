@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Finding html element using document.anchors</title>
+</head>
+<body>
+    <a href="#">HTML tutorial</a><br>
+    <a href="#">CSS tutorial</a><br>
+    <a href="#">XML tutorial</a>
+
+    <p id="info"></p>
+
+    <script>
+        document.getElementById('info').innerHTML = "number of anchors: " + document.anchors.length;
+    </script>
+</body>
+</html>

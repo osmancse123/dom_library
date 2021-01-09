@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>finding HTML elements using document.images</title>
+</head>
+<body>
+    <img src="img1.png" height="250" width="540">
+    <img src="img2.jpg" height="230" width="520">
+</body>
+    <p id="cse"></p>
+    
+    <script>
+        document.getElementById('cse').innerHTML = "number of images: " + document.images.length;
+    </script>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>querySelectorAll method</title>
+</head>
+<body>
+    <p class="intro">If you want to find all HTML elements that match a specified CSS selector (id, class names,etc), use querySelectorAll() method.</p>
+    <p class="intro">this Is DOM,</p>
+    <h4 id="demo">*****</h4>
+    <script>
+        var x = document.querySelectorAll('p.intro');
+        document.getElementById('demo').innerHTML = x[1].innerHTML + " the DOM is very useful.";
+    </script>
+</body>
+</html>

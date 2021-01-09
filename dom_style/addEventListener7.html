@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <h3>JavaScript addEventListene() method</h3>
+</head>
+<style>
+#myDiv1, #myDiv2 {
+    background-color: crimson;
+    padding: 50px;
+}
+#p1, #p2 {
+    background-color: whitesmoke;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 20px;
+}
+</style>
+<body>
+    
+    <div id="myDiv1">
+        <h2>Bubbling:</h2>
+        <p id="p1">click me..</p>
+    </div>
+    <br>
+    <div id="myDiv2">
+        <h2>Capturing:</h2>
+        <p id="p2">click me..</p>
+    </div>
+    
+    <script>
+        document.getElementById('myDiv1').addEventListener("click", function() {
+            alert('you click the crimson element!');
+        }, false);
+
+        document.getElementById('p1').addEventListener("click", function() {
+            alert('you click the white element!');
+        }, false);
+
+        document.getElementById('myDiv2').addEventListener("click", function() {
+            alert('you clicked the crimson element !');
+        }, true);
+
+        document.getElementById('p2').addEventListener("click", function() {
+            alert('you clicked the white element !');
+        }, true);
+    </script>
+</body>
+</html>

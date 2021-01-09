@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellowgreen;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: sticky;
+  background: red;
+}
+</style>
+<body>
+<h2>My First JavaScript Animation</h2>
+
+<button type="button" onclick="myName()">click me</button>
+
+<div id="container">
+<div id="animate"></div>
+</div>
+<!-- 
+<script>
+    function myMove() {
+      var elem = document.getElementById("animate");   
+      var pos = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.top = pos + "px"; 
+          elem.style.left = pos + "px"; 
+        }
+      }
+    }
+</script> -->
+
+<script>
+  function myName() {
+    var element = document.getElementById('animate');
+    var go = 0;
+    var id = setInterval(frame, 4);
+    function frame() {
+      if (go == 350) {
+        clearInterval(id);
+      } else {
+        go++;
+        element.style.top = go + "px";
+        element.style.left = go + "px";
+      }
+    }
+  }
+</script>
+</body>
+</html>

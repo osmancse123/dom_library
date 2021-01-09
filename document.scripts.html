@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h4>Finding html elements Using (method of) scripts</h4>
+</head>
+<body>
+    <p id="attr"></p>
+
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = a + b;
+        document.write(c);
+    </script>
+    
+    <script>
+       document.getElementById('attr').innerHTML = "number of scripts: " + document.scripts.length;
+    </script>
+</body>
+</html>

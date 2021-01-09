@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p class="intro">dom learn is very important for js coder</p>
+    <p class="intro">i love js <b>its popular for developer</b></p>
+
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementsByClassName('intro');
+        document.getElementById('demo').innerHTML = "class='intro': " + x[1].innerHTML;
+    </script>
+</body>
+</html>

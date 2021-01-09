@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h4>execute methods toUpperCase, and some events</h4>
+</head>
+<body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+        
+     </script>
+     Enter input No: <input type="text" id="fname" onchange="myFunction()">
+     <br><br><br>
+     
+     <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background: red; height: 20px; width: 90px; padding: 20px;">WelCome</div>
+     <script>
+         function mOver(obj) {
+             obj.innerHTML = 'you are good';
+         }
+         function mOut(obj) {
+             obj.innerHTML = 'bye';
+         }
+     </script>
+    <br><br>
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background: rgb(20, 75, 70); height: 30px; width: 90px; padding: 30px;">Click Me</div>
+    <script>
+        function mDown(obj) {
+            obj.style.backgroundColor =  "#FFF000";
+            obj.innerHTML = 'Release Me';
+        }
+        function mUp(obj) {
+            obj.style.backgroundColor = "#ccc";
+            obj.innerHTML = 'Thank You';
+        }
+    </script>
+
+</body>
+</html>
+
